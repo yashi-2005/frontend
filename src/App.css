@@ -1,0 +1,141 @@
+/* Container */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3, h4 {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Task Input & Comment Input */
+.task-input, .comment-input {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.task-input input, .comment-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.task-input button, .comment-input button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Buttons */
+button:hover {
+  opacity: 0.9;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Card Styling */
+.card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Task Header */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Comments */
+.comments {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  transition: background-color 0.2s;
+}
+
+.comment:hover {
+  background-color: #e8f0fe;
+}
+
+/* Empty messages */
+.empty {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Buttons inside comment */
+.comment div button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Color variations for cards */
+.card:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+.card:nth-child(odd) {
+  background-color: #e6f7ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .task-input, .comment-input {
+    flex-direction: column;
+  }
+
+  .task-input input, .comment-input input {
+    margin-bottom: 8px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
